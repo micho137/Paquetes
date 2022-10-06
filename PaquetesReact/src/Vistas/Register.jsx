@@ -61,7 +61,7 @@ function Register() {
           </div>
         </div>
         <div class="flex items-center justify-between">
-            <a href="/">
+            <a href="/Login">
             <input class="cursor-pointer bg-white border border-red-600 hover:bg-red-700 hover:text-white text-red-600 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" value="Cancelar"/>
             </a>
             <button

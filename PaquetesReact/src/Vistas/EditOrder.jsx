@@ -1,4 +1,4 @@
-function AddOrder() {
+function EditOrder() {
   return (
     <div className="AddOrder flex justify-center items-center">
       <form class="w-full max-w-sm my-40 ">
@@ -37,6 +37,23 @@ function AddOrder() {
               />
             </div>
           </div>
+        </div>
+        <div className="flex justify-center items-center mb-5">
+          <div>
+            <label
+              class="block uppercase text-xs text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+              for="inline-full-name"
+            >
+              Estado
+            </label>
+          </div>
+          <div class="">
+              <select className="px-2 py-2 border rounded hover:border-teal-400 font-semibold text-gray-600">
+                <option>Guardado</option>
+                <option>Cancelado</option>
+                <option>Cumplido</option>
+              </select>
+            </div>
         </div>
         <div className="grid grid-cols-4">
           <div className="">
@@ -217,11 +234,11 @@ function AddOrder() {
             />
           </a>
           <button className="bg-teal-500 rounded text-white font-bold px-4 py-2 hover:bg-teal-700">
-            Registrar Orden
+            Editar Orden
           </button>
         </div>
       </form>
     </div>
   );
 }
-export default AddOrder;
+export default EditOrder;

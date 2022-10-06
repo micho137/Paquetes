@@ -6,7 +6,7 @@ function Orders() {
           <h1 className="font-semibold text-2xl uppercase text-white text-center font-mono bg-teal-500 px-10 rounded-md">
             Listado de Ordenes
           </h1>
-          <a href="/" className="border-2 border-teal-500 flex justify-center items-center text-teal-500">
+          <a href="/AddOrder" className="border-2 border-teal-500 flex justify-center items-center text-teal-500">
             <span class="material-icons">add</span>
           </a>
         </div>
@@ -36,7 +36,7 @@ function Orders() {
             <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
               <td class="py-4 px-6">
                 <a
-                  href="#"
+                  href="/EditOrder"
                   class="font-medium text-teal-600 dark:text-teal-500 hover:underline"
                 >
                   1
@@ -56,7 +56,7 @@ function Orders() {
             <tr class="bg-white border-b dark:bg-teal-900 dark:border-gray-700">
               <td class="py-4 px-6">
                 <a
-                  href="#"
+                  href="/EditOrder"
                   class="font-medium text-teal-600 dark:text-teal-500 hover:underline"
                 >
                   2
