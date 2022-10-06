@@ -1,16 +1,21 @@
-import { useState } from 'react'
-import { NavBar } from './NavBar'
-import { Button } from "react-bootstrap"
-import "bootstrap/dist/css/bootstrap.min.css"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Login from './Vistas/Login'
+import Register from '../src/Vistas/Register'
+import Orders from '../src/Vistas/Orders'
 
 function App() {
   return (
     <div className="App">
-      <div className='container'>
-        <NavBar/>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<div>Home</div>} />
+          <Route path="/Login" element={<Login/>} />
+          <Route path="/Register" element={<Register/>}/>
+          <Route path="/Orders" element={<Orders/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
